@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-time Speech Transcription</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Real-time Speech Transcription</h1>
+  
+  <select id="language-select">
+    <option value="en-US">English (US)</option>
+    <option value="zh-CN">中文 (简体)</option>
+    <option value="es-ES">Español</option>
+    <!-- 添加更多语言选项 -->
+  </select>
+  
+  <button id="start-btn">Start Transcription</button>
+  <button id="stop-btn" disabled>Stop Transcription</button>
+  
+  <div id="transcription" contenteditable="true">
+    <p>Transcribed text will appear here...</p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
